@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: terraform-provider-rhcs-wylc
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/qijing/to-github-dber-tenant/appstudio/terraform-provider-rhcs-wylc@sha256:a1844eec027f317e153dcebc9b1c4adc6bf82b289132e099bfee6a3502de45b5
+        name: my-go
+        resources: {}
+status: {}

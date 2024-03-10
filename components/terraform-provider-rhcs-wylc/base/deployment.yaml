@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: terraform-provider-rhcs-wylc
     spec:
       containers:
-      - image: go-image:latest
+      - image: quay.io/qijing/to-github-dber-tenant/appstudio/terraform-provider-rhcs-wylc@sha256:a1844eec027f317e153dcebc9b1c4adc6bf82b289132e099bfee6a3502de45b5
         name: my-go
         ports:
         - containerPort: 8081
